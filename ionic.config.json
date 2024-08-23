@@ -1,0 +1,7 @@
+{
+  "name": "labs-startup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
