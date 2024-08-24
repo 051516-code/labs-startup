@@ -67,4 +67,5 @@ export interface Company {
     documents?: { 
         [type: string]: string; // Document type and URL or path
     };
+    ownerId: string;  
 }
