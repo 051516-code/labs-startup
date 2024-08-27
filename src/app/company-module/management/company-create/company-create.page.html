@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Company</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="currentStep" (ionChange)="onStepChange($event)">
+    <ion-segment-button value="step1">Step 1</ion-segment-button>
+    <ion-segment-button value="step2">Step 2</ion-segment-button>
+    <ion-segment-button value="step3">Step 3</ion-segment-button>
+  </ion-segment>
+
+  <ng-container [ngSwitch]="currentStep">
+    <app-step1 *ngSwitchCase="'step1'" [company]="company"></app-step1>
+    <app-step2 *ngSwitchCase="'step2'" [company]="company"></app-step2>
+    <app-step3 *ngSwitchCase="'step3'" [company]="company"></app-step3>
+  </ng-container>
+</ion-content>

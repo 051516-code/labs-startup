@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Step 1: Basic Information</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="floating">Company Name</ion-label>
+      <ion-input [(ngModel)]="company.name" name="name" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-textarea [(ngModel)]="company.description" name="description"></ion-textarea>
+    </ion-item>
+    <!-- Add more fields as needed -->
+  </ion-card-content>
+</ion-card>
