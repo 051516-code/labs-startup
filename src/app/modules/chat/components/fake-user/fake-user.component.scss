@@ -1,0 +1,15 @@
+/* user-select.component.scss */
+.user-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  

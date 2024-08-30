@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'chat',
     pathMatch: 'full'
   },
   {
@@ -12,9 +12,11 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path : 'company',
-    loadChildren: () => import('./modules/company-module/company-module.module').then( m => m.CompanyModuleModule)
-  },
+    path : 'chat',
+    loadChildren : () => import('./modules/chat/chat.module').then( m => m.ChatPageModule)
+  }
+ 
+
  
 
 
